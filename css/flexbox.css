@@ -1,0 +1,322 @@
+
+.main_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 76.7%;
+}
+
+.main_container_items{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+/* PRESENTACIÓN */
+
+.title_name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    
+}
+
+.title_network {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+/* Sección Acerca de mi */
+
+
+/* Seccion Skills*/
+
+.skills_line {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+/* Sección Hobbies */
+
+.Hobbies_line {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+/* Sección de Formación académica */
+
+.academic_courses {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.academic_courses_list {
+    list-style: none;
+    flex-direction: row;
+    padding-bottom: 20px;
+    
+}
+
+.academic_courses_item_title h4 {
+    margin-bottom: 0%;
+}
+
+.academic_courses_item_subtitle p {
+    margin-top: 0%;
+}
+
+/* Sección de Experiencia Profesional */
+
+.experience_box {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Contacto */
+
+.contacto_section{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/*Tablet*/
+@media (max-width:1440px) {
+
+    /* MENU */
+
+    body {
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .main_container {
+        position: relative;
+        width: 94.9%;
+    } 
+    
+    .main_container_items a {
+        display: none;
+    }
+
+    /* PRESENTACIÓN */
+
+    .title_name {   
+        margin-top: 10px; 
+    }
+
+    .about_container p {
+        margin-right: 0;
+    }
+
+    /* EXPERIENCIA */
+
+    .experience_box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* CONTACTO */
+
+    .contacto_img{
+        display: none;
+    }
+
+    .contacto_section {
+        padding-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .formulario_contacto_input {
+        width: 500;
+        height: 200;
+    }
+    
+}
+
+/* Celular */
+
+@media (max-width:360px) {
+
+    /*  */
+
+    body{
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main_container {
+        
+        width: 83%;
+    }
+
+    .main_container_items p {
+        display: none;
+    }
+
+    /*  */
+
+    .title_name {   
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .title_network {
+        margin-right: 30px;
+        flex-wrap: wrap;
+    }
+
+    /*  */
+
+    .about_signature {
+        width: 100%; /* La imagen se ajustará al ancho del contenedor */
+        height: auto;
+    }
+
+    /*  */
+
+    .skills_line {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* width: 100px;
+        height: 100px; */
+
+        /* background-color: blue; */
+    }
+
+    div.skills_box {
+        padding-left: 0;
+        width: 40%;
+        margin: 10px 10px 10px 10px;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .skills_box ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        /* background-color: black; */
+        /* align-self: center; */
+        /* align-content: center; */
+        /* flex-basis: auto;
+        align-self: flex-start; */
+        /* margin-top: 0%;
+        margin-bottom: 0%; */
+        /* color: white; */
+    }
+
+    /* HOBBIES */
+
+    .Hobbies_line {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* width: 100px;
+        height: 100px; */
+
+        /* background-color: blue; */
+    }
+
+    div.Hobbies_box {
+        padding-left: 0;
+        width: 40%;
+        margin: 10px 10px 10px 10px;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .Hobbies_box ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+
+
+    /* Cursos academicos */
+
+    .academic_courses {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .academic_courses_item_title h4 {
+        margin-bottom: 0%;
+    }
+
+    .academic_courses_item_subtitle p {
+        margin-top: 0%;
+    }
+
+    /* Experiencia */
+
+    .experience_img {
+        width: 100%; /* La imagen se ajustará al ancho del contenedor */
+        height: auto;
+    }
+
+    /* Contacto */
+
+    .formulario_contacto_text {
+        width: 100%;
+    }
+
+    .contacto_section {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    /* .formulario_contacto_subtext {
+        width: 270px;
+    }*/
+
+    .formulario_contacto_textarea {
+        width: 250px;
+    } 
+
+}
+
+
+

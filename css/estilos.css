@@ -1,0 +1,293 @@
+
+:root {
+
+    --color-primario: #B2B377;
+    --color-secundario: #D2D180;
+    --color-terciario: #E5E483;
+    --color-blanco: #FFFFFF;
+    --color-hover: #F1F5A8;
+    --color-beige: #F5F5DC;
+
+    --fuente-lora: "Raleway", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-lora);
+    background-color: var(--color-beige);
+    position: relative;
+    font-size: 16px;
+
+  
+    padding: 0 135px;
+    width: 80%; 
+    /* overflow: auto; */
+    /* color: white; */
+    /* box-sizing: border-box; */
+    /* height: 60px; */
+}
+
+/* MENU */
+
+.main_container {
+    display: flex;
+    background-color: var(--color-primario);
+    height: 60px;
+    /* width: 80vw; */
+    padding: 0 25px;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+.main_container_items {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.main_container a {
+    text-decoration: none;
+    user-select: none;
+    color: white;
+}
+
+/* .main_container_items:focus {
+    outline: none;
+} */
+
+/* .main_skills {
+    text-decoration: none;
+    outline: white;
+} */
+
+
+.main_foto {
+    height: 20px;
+    border-radius: 50%;
+  }
+
+
+/* PRESENTACIÓN */
+
+.title_profile {
+    height: 250px;
+    border-radius: 50%;
+}
+
+.title_network {
+    display: flex;
+    padding-inline-start: 0px;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+
+    /* outline: none;
+    text-decoration: none; */
+
+    /* background-image: url(../img/Vector.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer; */
+}
+
+.title_network a {
+    text-decoration: none;
+    user-select: none;
+    color: black;
+}
+
+.button_curriculo {
+    padding: 10px 20px;
+    background-color: var(--color-beige);
+    color: black;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* .title_network_item {
+
+    outline: none;
+    text-decoration: none;
+    color: white;
+} */
+
+/* Sección Acerca de mi */
+
+.about {
+    background-color: var(--color-secundario);
+
+}
+
+.about_title {
+    padding-top: 20px;
+}
+
+.about_paragraph {
+    font-size: 14px;
+    margin-right: 300px;
+}
+
+.about_signature {
+    margin-top: 15px;
+}
+
+/* Seccion Skills*/
+
+.skills_title {
+    text-align: center;
+}
+
+.skills_box {
+    display: flex;
+    width: 12vw;
+    height: 13vh;
+    background-color: white;
+    align-items: end;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    
+}
+
+.skills_box:hover {
+    background-color: var(--color-secundario);
+}
+
+.skills_name {
+    list-style: none;
+}
+
+.skills_img {
+    list-style: none;
+}
+
+/* Sección Hobbies */
+
+
+
+.Hobbies_title {
+    text-align: center;
+
+}
+
+.Hobbies_box {
+    display: flex;
+    width: 12vw;
+    height: 13vh;
+    background-color: white;
+    align-items: end;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+}
+
+.Hobbies_box:hover{
+    background-color: var(--color-secundario);
+}
+
+.Hobbies_name {
+    list-style: none;
+}
+
+.Hobbies_img {
+    list-style: none;
+}
+
+/* Sección de Formación académica */
+
+.academic {
+    background-color: var(--color-secundario);
+}
+
+.academic_title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Sección de Experiencia Profesional */
+
+.experience_section__title {
+    text-align: center;
+}
+
+.experiencia_boton_repo {
+
+    padding: 10px 20px;
+    background-color: var(--color-beige);
+    color: black;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.experiencia_boton_repo:hover {
+    background-color: var(--color-secundario);
+}
+
+.experience_boton_demo {
+
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.experience_boton_demo:hover {
+    background-color: var(--color-beige);
+}
+
+/* Contacto */
+
+
+.contacto {
+    background-color: var(--color-secundario);
+    margin-top: 50px;
+    
+}
+
+
+.formulario_contacto_input {
+    margin-top: 20px;
+
+    border-radius: 5px;
+    border: 1px solid var(--color-beige);
+}
+
+.formulario_contacto_textarea {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-beige);
+}
+
+.formulario_contacto_boton {
+    margin-top: 20px;
+    
+    padding: 10px 20px;
+    background-color: var(--color-beige);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sección de Footer */
+
+.footer{
+    background-color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.footer p {
+    margin:0; padding:0;
+}
